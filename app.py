@@ -22,6 +22,3 @@ def translate():
     formatted_translations = "\n".join([f"{lang}: {text}" for lang, text in translations.items()])
     
     return render_template('index.html', translations=formatted_translations)
-
-if __name__ == "__main__":
-    app.run(debug=True)
